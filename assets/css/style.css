@@ -1,0 +1,556 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text-white{
+    color: #fff !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+/* 
+    1. Vị trí
+    2. Kích thước
+    3. Màu sắc
+    4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ...)
+*/
+/* Common */
+.clear{
+    clear: both;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.cod-3{
+    width: calc(100%/3);
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+#main{
+
+}
+/* Header */
+#header{
+    height: 46px;
+    background-color: black;
+    position: fixed ;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav>li{
+    display: inline-block;
+}
+
+#nav li{
+    
+    position: relative;  
+}
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: inline-block;
+}
+
+#nav li .nav-icon-down{
+    font-size: 14px ;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+    width: 100%;
+}
+
+#nav .subnav{
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+   
+}
+
+#nav .subnav a{
+    color: #000; 
+    padding: 0 12px ;
+    line-height: 40px;
+}
+
+#nav .subnav li{
+    width: 100%;
+    
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0px 22px;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;   
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+
+#header .menu-icon,
+#header .search-icon{
+    font-size: 15px;
+    color: #fff;
+    line-height: 46px;
+
+}
+/* End Header */
+
+
+/* Slider */
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider2.jpg') top center / cover no-repeat ;
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+#slider .text-description{
+    font-size: 14px;
+    margin-top: 25px;
+}
+/* End Slider */
+
+
+/* Content */
+#content{
+
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 0 112px ;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sup-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.6;
+    
+}
+
+#content .members-list {
+    margin-top: 48px;
+    /* justify-self: center; */
+    /* justify-content: space-between; */
+    /* overflow: hidden; */
+}
+
+#content .member-item {
+    /* display: inline-block; */
+    text-align: center;
+    
+}
+
+#content .member-img{
+    width: 100px;
+    height: 100px; 
+    margin-top: 15px;
+    border-radius: 4px;
+    
+}
+
+#content .member-name{
+    font-size: 15px;
+    text-align: center;
+}
+
+/* tour section */
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 50px;
+    list-style: none;
+    color: #757575;
+}
+
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-top: 1px solid #ddd;
+}
+
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px ;
+}
+
+.tickets-list .quantity{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+/* Places */
+
+.places-list{
+    
+    margin-top: 32px;
+    
+}
+
+
+.place-img{
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    font-size: 15px;
+    padding:16px;
+}
+
+.place-heading{
+    /* padding-top: 10px; */
+    font-size: 15px;
+    
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+    
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.btn{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 10px;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+/* End Places */
+
+
+/* Contact */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+
+}
+/* End contact */
+
+
+/* Map section */
+
+.map-section img{
+    width: 100%;
+}
+
+/* Footer section */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list{
+    font-size: 23px;
+    
+}
+
+#footer .socials-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+#footer .copyright a:hover,
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.modal.open{
+    display: flex;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    min-width: calc(100% - 32px);
+    position: relative;
+    animation: modalFaceIn ease .4s ;
+    
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-header i{
+    margin-right: 16px;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-body .modal-label{
+    display: block;
+    font-size: 20px;
+    /* padding: 15px 0; */
+}
+
+.modal-body .modal-input{
+    border: 1px solid #ccc;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-body .buy-ticket{
+    background-color: #009688;
+    width: 100%;
+    line-height: 40px;
+    font-size: 15px;
+    /* margin-top: 25px; */
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.modal-body .buy-ticket:hover{
+    opacity: 0.8;
+}
+
+.close-modal {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.close-modal i{
+    font-size: 10px;
+}
+
+.modal-footer{
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 16px 15px;
+    
+}
+
+.modal-footer a{
+    color: #26cff0
+}
+
+@keyframes modalFaceIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

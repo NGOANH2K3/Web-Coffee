@@ -1,0 +1,296 @@
+        <!-- Những thành phần thường gặp trên giao diện website -->
+<!-- 
+    - Header(phần đầu của trang)
+    - Navigation( điều hướng)
+    - Breadcrumb(thể hiện mình đang ở đâu)
+    - Sidebar(thanh chưa cái j đấy ở 1 bên màn hình [bên trái or phải])
+    - Slider ( trình diễn những nội dung )
+    - Content (chứa nội dung của trang)
+    - Banner (ảnh)
+    - Footer ( trân trang )
+-->
+
+                        <!-- Phân Tích Trang Web -->
+<!-- 
+    1. Phân Tích
+        + Header
+        + Silder
+        + Content
+            + About
+            + tour
+            + Contact
+            + Image
+            + Footer
+        + Footer
+-->
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <!-- header -->
+        <div id="header">
+            <!-- Begin: nav -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#the-coffee">Coffee</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">More
+                        <i class="nav-icon-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: nav -->
+
+            <!-- Menu Button -->
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <!--  Search button-->
+             <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+             </div>
+            
+        </div>
+
+        <!-- silder -->
+        <div id="slider">
+            <div class="text-content">
+                <div class="text-heading">COFFEE TRUNG NGUYÊN</div>
+                <div class="text-description">Đậm Đà, Vị Mạnh Từng Lần Uống. Sảng Khoái Tức Thời </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div id="content">
+            <!-- About section -->
+            <div id="the-coffee" class="content-section">
+                <h2 class="section-heading">COFFEE</h2>
+                <p class="section-sup-heading">We Love Coffee</p>
+                <p class="about-text">
+                    Cây cà phê được trồng ở hơn 70 quốc gia. Cà phê là một mặt hàng xuất khẩu lớn: đứng đầu trong số các mặt hàng xuất khẩu nông nghiệp tại nhiều quốc gia và là một trong những mặt hàng xuất khẩu nông nghiệp hợp pháp lớn nhất trên thế giới.
+                </p>
+                <div class="row members-list">
+                    <div class="col cod-3 member-item">
+                        <p class="member-name">Coffee sữa</p>
+                        <img src="./assets/img/member/member1.jpg" alt="name" class="member-img">
+                    </div>
+                    <div class="col cod-3 member-item">
+                        <p class="member-name">Coffee đen</p>
+                        <img src="./assets/img/member/member2.JPG" alt="name" class="member-img">
+                    </div>
+                    <div class="col cod-3 member-item">
+                        <p class="member-name">Coffee kem</p>
+                        <img src="./assets/img/member/member3.jpg" alt="name" class="member-img">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Tour section -->
+             <div id="store" class="tour-section">
+                 <div class="content-section">
+                     <h2 class="section-heading text-white">COFFEE STORE</h2>
+                     <p class="section-sup-heading text-white">Wellcome To My Coffee World </p>
+                     <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                     </ul>
+
+                     <!-- Places -->
+                     <div class="row places-list">
+                        <div class="col cod-3 text-center">
+                            <img src="./assets/img/places/place1.jpg" alt="Hà Nội" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Hà Nội</h3>
+                                <p class="place-time">Fri 27 Nov 2025</p>
+                                <p class="place-desc">Sang Trọng, Đẹp Đẽ, Thoáng Mát</p>
+                                <button  class="btn js-buy-ticket">Buy ticket</button>
+                            </div>
+                        </div>
+                        <div class="col cod-3 text-center">
+                            <img src="./assets/img/places/place2.jpg" alt="Hà Nội" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Hồ Chí Minh</h3>
+                                <p class="place-time">Fri 28 Nov 2025</p>
+                                <p class="place-desc">Sang Trọng, Đẹp Đẽ, Thoáng Mát</p>
+                                <button  class="btn js-buy-ticket">Buy ticket</button>
+                            </div>
+                        </div>
+                        <div class="col cod-3 text-center">
+                            <img src="./assets/img/places/place3.jpg" alt="Hà Nội" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Đà Nẵng</h3>
+                                <p class="place-time">Fri 29 Nov 2025</p>
+                                <p class="place-desc">Sang Trọng, Đẹp Đẽ, Thoáng Mát</p>
+                                <button  class="btn js-buy-ticket">Buy ticket</button>
+                            </div>
+                        </div>
+                        
+                     </div>
+                 </div>
+             </div>
+
+            <!-- Begin: Contact section -->
+            <div id="contact" class="content-section">
+                <h2 class="section-heading ">COFFEE CONTACT</h2>
+                <p class="section-sup-heading">Fan? Drop A Node</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>HÀ NỘI</p>
+                        <p><i class="ti-mobile"></i>Phone: ++00 0355752703</p>
+                        <p><i class="ti-email"></i>Email: anh@gmail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" required placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" required placeholder="Email" id="" class="form-control">
+                                </div>
+                                
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" required placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+
+                            <input class="btn pull-right mt-16" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Contact section  -->
+
+            <div class="map-section">
+                <img src="./assets/img/map/map1.jpg" alt="map">
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="#">Ngô Quốc Anh</a></p>
+        </div>
+
+
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-close-modal">
+                <i class="ti-close"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="ticket-quantity" class="modal-label">
+                    <i class="ti-shopping-cart">
+                        Tickets, $15 per person
+                    </i>
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How mant">
+
+                <label for="ticket-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="ticket-email" type="text" class="modal-input" placeholder="Enter email...">
+
+                <button class="buy-ticket">
+                    Pay <i class="ti-check"></i>
+                </button>
+
+                <button class="close-modal"> Close <i class="ti-close" ></i></button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-help"> Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+    </div>
+    
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight;
+        var closeMenu = document.querySelectorAll('#nav li a[href*="#"]')
+
+        mobileMenu.onclick = () => {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose){
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        for(var i = 0; i < closeMenu.length ; i++){
+            var menuItem = closeMenu[i];
+
+            menuItem.onclick = () => {
+                header.style.height = null;
+            }
+        }
+    </script>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const closeModal = document.querySelector('.js-close-modal')
+        const modal = document.querySelector('.js-modal')
+        function  showBuyTicket() {
+
+            modal.classList.add('open')
+        }
+
+        function hideBuyTicket() {
+            modal.classList.remove('open')
+        }
+
+        for(const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTicket )  
+        }
+
+        closeModal.addEventListener('click', hideBuyTicket)
+
+        modal.addEventListener('click', hideBuyTicket)
+
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>
